@@ -1,6 +1,11 @@
 import requests, threading, datetime, sys, os, time
 from time import sleep
 
+try:    # Janggan di ubah
+        ip = requests.get('https://api.ipify.org').text
+except requests.exceptions.ConnectionError:
+        exit(' [!] Koneksi Internet Error')
+
 a,m,h,k,b,u,c,p,bn,o = [
 '\033[90m',
 '\033[31m',
@@ -33,12 +38,12 @@ banner= """
 \033[35m ██║     ██║██║╚██╔╝██║██║   ██║       
 \033[35m ███████╗██║██║ ╚═╝ ██║██║   ██║       
 \033[35m ╚══════╝╚═╝╚═╝     ╚═╝╚═╝   ╚═╝                                      
-\033[32m[•]───────────────────────────────────────────[•]
-\033[32m | [+]  Author  : Brezxy 		               |
-\033[32m | [+]  Credits :\033[90m Eskeyz		       |
-\033[32m | [+]  TEAM    : DARK CYBER HUNTER                    |
-\033[32m | [+]  Chanel  : Brezxy		               |
-\033[32m[•]───────────────────────────────────────────[•]"""
+\033[35m[•]───────────────────────────────────────────[•]
+\033[37m | [+]  Author  : Brezxy 		       |
+\033[37m | [+]  Credits :\033[90m Eskeyz		       |
+\033[37m | [+]  TEAM    : DARK CYBER HUNTER            |
+\033[37m | [+]  Chanel  : Brezxy		       |
+\033[35m[•]───────────────────────────────────────────[•]"""
 os.system('clear')
 print(banner)
 print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,h,p,k,m,h,ip))
@@ -46,7 +51,11 @@ print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,h,p,k,m,h,ip))
 def main():
 	global auth, maxerr, api, pos, dely
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
-	auth = str(input("\033[37m Auth Key : "))
+        auth = input('\n\033[37m[\033[33m•\033[37m] \033[33mex \033[31m: \033[32mAuth\n\033[37m[\033[32m\033[37m] \033[33mKey\033[31m:\033[32m ')
+        if auth =='':
+        exit('\033[37m[\033[31m!\033[37m] Janggan Kosong')
+        exit('\033[37m[\033[31m!\033[37m] Auth Tidak Valid ')
+        else:
 	pos = int(input("""
 1 : Round 1 (Eliminated)
 2 : Round 2 (Eliminated)
