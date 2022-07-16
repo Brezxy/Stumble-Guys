@@ -47,8 +47,7 @@ banner= """
 os.system('clear')
 print(banner)
 print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,m,p,p,m,p,ip))
-print ('
-')
+print ('')
 
 def main():
 	global auth, maxerr, api, pos, dely
