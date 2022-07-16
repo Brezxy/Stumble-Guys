@@ -53,7 +53,7 @@ def main():
 Input : """))
 	dely = float(input("\n\033[37mDelay ( Ex. 2.0 "))
         thr = int(input("\n\033[37mThreads ( Default '1' ): "))
-	print (f"\033[1;37m<═════════════════[\033[1;33;41m • \033[1;37m STARTING \033[1;33m• \033[0m\033[1;37m]═══════════════════>")
+	print (f"\033[37m<═════════════════[\033[1;33;41m • \033[1;37m STARTING \033[1;33m• \033[0m\033[37m]═══════════════════>")
         for _ in range(thr):
 	        threading.Thread(target=s).start()
 
@@ -76,7 +76,7 @@ def s():
                                 nama = response.text.split('"Username":')[1].split(',')[0]
                                 trophy = response.text.split('"SkillRating":')[1].split(',')[0]
                                 crown = response.text.split('"Crowns":')[1].split(',')[0]
-                                sys.stdout.write(f"\r\033[37m[{dt.minute}:{dt.second}] \033[31;1m{id} | \033[37m{nama} | \033[1;37m{crown} | \033[33;1m{trophy}")
+                                sys.stdout.write(f"\r\033[37m[{dt.minute}:{dt.second}] \033[31;1m{id} | \033[37m{nama} | \033[31m{crown} | \033[1;33m{trophy}")
                                 sys.stdout.flush()
                         elif response.status_code == 403 and response.text == "BANNED":
                                 print (f"\033[1;30m<════════════[\033[1;33;41m • \033[1;37m Account get Banned! \033[1;33m• \033[0m\033[1;30m]══════════════>")
