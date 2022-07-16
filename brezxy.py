@@ -28,7 +28,7 @@ def main():
 2 : Round 2 (Eliminated)
 3 : Round 3 (Winner)
 Input: """))
-	dely = float(input("\nDelay ( Ex. 2.0 and etc ): "))
+	dely = float(input("\nDelay ( Ex. 1.0 ): "))
 	thr = int(input("\nThreads ( Default '1' ): "))
 	print("◆❯────────────────────────「  STARTING  」──────────────────────❮◆")
 	for _ in range(thr):
@@ -57,12 +57,12 @@ def s():
                                 sys.stdout.flush()
                         elif response.status_code == 403 and response.text == "BANNED":
                                 print (f"\033[1;30m<════════════[\033[1;33;41m • \033[1;37m Account get Banned! \033[1;33m• \033[0m\033[1;30m]══════════════>")
-                                break
+                                break;
                                 sys.exit(0)
                         elif response.text == "SERVER_ERROR":
                                 continue
                         else:
-                                print(f"[{response.status_code}] Code Expired!")
+                                print(f"[{response.status_code}] Ini Bukan Expired Tunggu aja")
                         if dely > 0: time.sleep(dely)
                 except Exception as e:
                         pass
