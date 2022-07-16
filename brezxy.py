@@ -84,8 +84,7 @@ def s():
                                 sys.exit(0)
                         elif response.text == "SERVER_ERROR":
                                 continue
-                        else:
-                        pass
+                        else:        
 
 if __name__ == "__main__":
 	main()
