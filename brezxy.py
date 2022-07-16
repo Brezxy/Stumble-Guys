@@ -14,8 +14,15 @@ a,m,h,k,b,u,c,p,bn,o = [
 '\033[0m'
 ]
 
+#mengetik otomatis
+def mengetik(z):
+    for e in z + "\n":
+      sys.stdout.write(e)
+      sys.stdout.flush()
+      time.sleep(0.05)
+
 os.system('clear')
-print ('Subscribe yt ku ngab Brezxy ok!')
+print ('\033[37mSubscribe yt ku ngab Brezxy ok!')
 os.system('termux-open-url https://youtube.com/channel/UCQGgmljcA-bap-13YdL-sAQ')
 sleep(3)
 os.system('clear')
@@ -55,6 +62,7 @@ def main():
 Input : """))
 	dely = float(input("\n\033[37mDelay ( Ex. 3.0 ): "))
 	thr = int(input("\n\033[37mThreads ( Default '1' ): "))
+        mengetik("\033[37m[KALO SUDAH LIMIT TUNGU AJA BAKAL NGULANG SENDIRI ] ")
 	print (f"\033[1;30m<═════════════════[\033[1;33;41m • \033[1;37m STARTING \033[1;33m• \033[0m\033[1;30m]═══════════════════>")
 	for _ in range(thr):
 	        threading.Thread(target=s).start()
