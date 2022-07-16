@@ -47,9 +47,9 @@ def main():
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
 	auth = str(input("\033[37m Auth Key : "))
 	pos = int(input("""
-\033[37m 1 = Round 2 (Eliminated)
-\033[37m 2 = Round 3 (Eliminated)
-\033[37m 3 = Round 3 (Winner)
+\033[37m 1 : Round 2 (Eliminated)
+\033[37m 2 : Round 3 (Eliminated)
+\033[37m 3 : Round 3 (Winner)
 Input : """))
 	dely = float(input("\n\033[37mDelay ( Ex. 2.0 ): "))
 	thr = int(input("\n\033[37mThreads ( Default '1' ): "))
@@ -76,7 +76,7 @@ def s():
                                 nama = response.text.split('"Username":')[1].split(',')[0]
                                 trophy = response.text.split('"SkillRating":')[1].split(',')[0]
                                 crown = response.text.split('"Crowns":')[1].split(',')[0]
-                                sys.stdout.write(f"\r[{dt.minute}:{dt.second}] {id} | {nama} | {crown} | {trophy}")
+                                sys.stdout.write(f"\r\033[37m[{dt.minute}:{dt.second}] \033[31;1m{id} | \033[37m{nama} | \033[1;37m{crown} | \033[33;1m{trophy}")
                                 sys.stdout.flush()
                         elif response.status_code == 403 and response.text == "BANNED":
                                 print (f"\033[1;30m<════════════[\033[1;33;41m • \033[1;37m Account get Banned! \033[1;33m• \033[0m\033[1;30m]══════════════>")
