@@ -27,7 +27,7 @@ banner= """
 ║  [•] Yotube  : Brezxy                                   ║
 ╚════════════════════════════════════════════════╝
 ╔═══════════════════════════╗
-║\033[33;1m JANGAN TERLALU BRUTAL║
+║     JANGAN TERLALU BRUTAL      ║
 ╚═══════════════════════════╝"""
 sleep(1)
 print(banner)
@@ -35,11 +35,10 @@ print(banner)
 def main():
 	global auth, maxerr, api, pos, dely
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
-	auth = str(input("Auth Key: "))
+	auth = str(input("Auth Key : "))
 	pos = int(input("""
-0 = Round 1 (Eliminated)
-1 = Round 2 (Eliminated)
-2 = Round 3 (Eliminated)
+1 = Round 1 (Eliminated)
+2 = Round 2 (Eliminated)
 3 = Round 3 (Winner)
 Input: """))
 	dely = float(input("\nDelay ( Ex. 2.0 and etc ): "))
