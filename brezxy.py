@@ -47,14 +47,14 @@ def main():
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
 	auth = str(input("\033[37m Auth Key : "))
 	pos = int(input("""
-\033[37m 1 : Round 2 (Eliminated)
-\033[37m 2 : Round 3 (Eliminated)
-\033[37m 3 : Round 3 (Winner)
+\033[37m 1 = Round 2 (Eliminated)
+\033[37m 2 = Round 3 (Eliminated)
+\033[37m 3 = Round 3 (Winner)
 Input : """))
-	dely = float(input("\n\033[37mDelay ( Ex. 2.0 "))
-        thr = int(input("\n\033[37mThreads ( Default '1' ): "))
-	print (f"\033[37m<═════════════════[\033[1;33;41m • \033[1;37m STARTING \033[1;33m• \033[0m\033[37m]═══════════════════>")
-        for _ in range(thr):
+	dely = float(input("\n\033[37mDelay ( Ex. 2.0 ): "))
+	thr = int(input("\n\033[37mThreads ( Default '1' ): "))
+	print (f"\033[1;30m<═════════════════[\033[1;33;41m • \033[1;37m STARTING \033[1;33m• \033[0m\033[1;30m]═══════════════════>")
+	for _ in range(thr):
 	        threading.Thread(target=s).start()
 
 def s():
