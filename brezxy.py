@@ -45,11 +45,13 @@ banner= """
 \033[37m | [+]  Chanel  : Brezxy		       |
 \033[35m[•]───────────────────────────────────────────[•]
 \033[35m╔═══════════════════════════╗
-\033[37m║ print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,m,p,p,m,p,ip))
- ║
+\033[37m║     GUNAKAN DELAY 2.0, 3.0     ║
 \033[35m╚═══════════════════════════╝""""""
 os.system('clear')
 print(banner)
+print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,m,p,p,m,p,ip))
+print ('
+')
 
 def main():
 	global auth, maxerr, api, pos, dely
