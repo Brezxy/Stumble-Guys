@@ -50,7 +50,7 @@ print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,h,p,k,m,h,ip))
 
 def main():
 	global auth, maxerr, api, pos, dely
-        api = "kitkabackend.eastus.cloudapp.azure.com:5010"
+       	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
 	auth = str(input("Auth Key: "))
 	pos = int(input("""
 0 = Round 1 (Eliminated)
