@@ -1,4 +1,4 @@
-import requests, threading, datetime, sys, os, time
+import requests, datetime, sys, os, time
 from time import sleep
 
 a,m,h,k,b,u,c,p,bn,o = [
@@ -51,11 +51,8 @@ def main():
 \033[37m 2 : Round 3 (Eliminated)
 \033[37m 3 : Round 3 (Winner)
 Input : """))
-	dely = float(input("\n\033[37mDelay ( Ex. 2.0 ): "))
-	thr = int(input("\n\033[37mThreads ( Default '1' ): "))
-	print (f"\033[1;30m<════════════[\033[1;33;41m • \033[1;37m STARTING \033[1;33m• \033[0m\033[1;30m]══════════════>")
-	for _ in range(thr):
-	        threading.Thread(target=s).start()
+	dely = float(input("\n\033[37mDelay ( Ex. 2.0 ))
+	print (f"\033[1;30m<═════════════════[\033[1;33;41m • \033[1;37m STARTING \033[1;33m• \033[0m\033[1;30m]═══════════════════>")
 
 def s():
         global maxerr
