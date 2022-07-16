@@ -42,8 +42,8 @@ def main():
 2 = Round 3 (Eliminated)
 3 = Round 3 (Winner)
 Input: """))
-	dely = float(input("\nDelay ( Ex. 0.5 | 1.0 | 2.0 and etc ): "))
-	thr = int(input("\nThreads ( Default '1' | Jangan memasukan lebih dari 1 ): "))
+	dely = float(input("\nDelay ( Ex. 2.0 and etc ): "))
+	thr = int(input("\nThreads ( Default '1' ): "))
 	print("="*64)
 	for _ in range(thr):
 	        threading.Thread(target=s).start()
@@ -58,8 +58,8 @@ def s():
                             'use_response_compression': 'true',
                             'Accept-Encoding': 'gzip',
                             'Host': api,
-                            'Connection': None,
-                            'User-Agent': None,
+                            'Connection': "keep-alive",
+                            'User-Agent': 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1724) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.73 Mobile Safari/537.36',
                         }
                         response = requests.get(f'http://{api}/round/finishv2/{pos}', headers=headers)
                         if response.status_code == 200:
