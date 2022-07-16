@@ -85,9 +85,6 @@ def s():
                         elif response.text == "SERVER_ERROR":
                                 continue
                         else:
-                                print(f"[{response.status_code}] Ini Bukan Expired Tunggu aja")
-                        if dely > 0: time.sleep(dely)
-                except Exception as e:
                         pass
 
 if __name__ == "__main__":
