@@ -27,7 +27,7 @@ def main():
 1 : Round 1 (Eliminated)
 2 : Round 2 (Eliminated)
 3 : Round 3 (Winner)
-Input: """))
+Input : """))
 	dely = float(input("\nDelay ( Ex. 1.0 ): "))
 	thr = int(input("\nThreads ( Default '1' ): "))
 	print("◆❯────────────────────────「  STARTING  」──────────────────────❮◆")
