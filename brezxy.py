@@ -46,7 +46,7 @@ def main():
 	global auth, maxerr, api, pos, dely
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
 	auth = str(input("\033[37m Auth Key : "))
-	pos = int(input("""\033[37m 0 = Round 1 (Eliminated)
+	pos = int(input("""
 \033[35m 1 = Round 2 (Eliminated)
 \033[35m 2 = Round 3 (Eliminated)
 \033[35m 3 = Round 3 (Winner)
