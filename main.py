@@ -1,4 +1,4 @@
-pimport requests, threading, datetime, sys, os, time
+import requests, threading, datetime, sys, os, time
 from time import sleep
 
 os.system('clear')
