@@ -46,7 +46,7 @@ banner= """
 \033[35m[•]───────────────────────────────────────────[•]"""
 os.system('clear')
 print(banner)
-print ('\033[37m[\033[37m\033[35m+\033[37m] \033[37mYour IP \033[31m: \033[37m' (ip))
+print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,m,p,p,m,p,ip))
 
 def main():
 	global auth, maxerr, api, pos, dely
