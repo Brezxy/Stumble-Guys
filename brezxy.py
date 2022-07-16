@@ -47,8 +47,8 @@ def main():
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
 	auth = str(input("\033[37m Auth Key : "))
 	pos = int(input("""
-\033[37m 1 : Round 2 (Eliminated)
-\033[37m 2 : Round 3 (Eliminated)
+\033[37m 1 : Round 1 (Eliminated)
+\033[37m 2 : Round 2 (Eliminated)
 \033[37m 3 : Round 3 (Winner)
 Input : """))
 	dely = float(input("\n\033[37mDelay ( Ex. 2.0 ): "))
