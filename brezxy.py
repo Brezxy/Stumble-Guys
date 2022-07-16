@@ -74,10 +74,12 @@ def s():
                         response = requests.get(f'http://{api}/round/finishv2/{pos}', headers=headers)
                         if response.status_code == 200:
                                 negara = response.text.split('"Country":')[1].split(',')[0]
+                                region = response.text.split('"Region":')[1].split(',')[0]
+                                id = response.text.split('"Id":')[1].split(',')[0]
                                 nama = response.text.split('"Username":')[1].split(',')[0]
                                 trophy = response.text.split('"SkillRating":')[1].split(',')[0]
                                 crown = response.text.split('"Crowns":')[1].split(',')[0]
-                                sys.stdout.write(f"\r[{dt.hour}:{dt.minute}:{dt.second}] {negara} | Username: {nama} | Trophy: {trophy} | Crowns: {crown}")
+                                sys.stdout.write(f"\r[{dt.hour}:{dt.minute}:{dt.second}] {id} | {nama} | {negara} | {region} | {crown} | {trophy}")
                                 sys.stdout.flush()
                         elif response.status_code == 403 and response.text == "BANNED":
                                 print (f"\033[1;30m<════════════[\033[1;33;41m • \033[1;37m Account get Banned! \033[1;33m• \033[0m\033[1;30m]══════════════>")
