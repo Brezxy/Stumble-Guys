@@ -6,7 +6,7 @@ print ('Subscribe yt ku ngab Brezxy ok!')
 os.system('termux-open-url https://youtube.com/channel/UCQGgmljcA-bap-13YdL-sAQ')
 sleep(3)
 os.system('clear')
-# Recore : Brezxy 
+# sssst
 banner= """
 ╔════════════════════════════════════════════════╗
 ║  [•] Authour : Brezxy                         ║
