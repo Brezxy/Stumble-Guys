@@ -54,10 +54,7 @@ print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,h,p,k,m,h,ip))
 def main():
 	global auth, maxerr, api, pos, dely
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
-        auth = str(input("Auth Key: "))
-        exit('\033[37m[\033[31m!\033[37m] Janggan Kosong')
-        exit('\033[37m[\033[31m!\033[37m] Auth Tidak Valid ')
-        else:
+        auth = str(input("\033[35m Auth Key: "))
 	pos = int(input("""
 1 : Round 1 (Eliminated)
 2 : Round 2 (Eliminated)
