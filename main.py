@@ -1,4 +1,4 @@
-import requests, threading, datetime, sys, os, time
+pimport requests, threading, datetime, sys, os, time
 from time import sleep
 
 os.system('clear')
@@ -9,9 +9,9 @@ os.system('clear')
 # Recore : Brezxy 
 banner= """
 ╔════════════════════════════════════════════════╗
-║  [•] Authour : Brezxy                                   ║
-║  [•] Credits : https://github.com/Eskeyz                ║
-║  [•] Yotube  : Brezxy                                   ║
+║  [•] Authour : Brezxy                         ║
+║  [•] Credits : https://github.com/Eskeyz      ║
+║  [•] Yotube  : Brezxy                         ║
 ╚════════════════════════════════════════════════╝
 ╔═══════════════════════════╗
 ║     JANGAN TERLALU BRUTAL      ║
