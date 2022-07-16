@@ -69,7 +69,7 @@ def s():
                                 sys.stdout.write(f"\r[{dt.hour}:{dt.minute}:{dt.second}] {negara} | Username: {nama} | Trophy: {trophy} | Crowns: {crown}")
                                 sys.stdout.flush()
                         elif response.status_code == 403 and response.text == "BANNED":
-                                print(f"[{dt.hour}:{dt.minute}:{dt.second}] Account get Banned!")
+                                print (f"\033[1;30m<════════════[\033[1;33;41m • \033[1;37m Account get Banned! \033[1;33m• \033[0m\033[1;30m]══════════════>")
                                 break
                                 sys.exit(0)
                         elif response.text == "SERVER_ERROR":
