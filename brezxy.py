@@ -1,10 +1,5 @@
 import requests, threading, datetime, sys, os, time
 
-try:    # Janggan di ubah
-        ip = requests.get('https://api.ipify.org').text
-except requests.exceptions.ConnectionError:
-        exit(' [!] Koneksi Internet Error')
-
 a,m,h,k,b,u,c,p,bn,o = [
 '\033[90m',
 '\033[31m',
@@ -45,12 +40,11 @@ banner= """
 \033[35m[•]───────────────────────────────────────────[•]"""
 os.system('clear')
 print(banner)
-print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,h,p,k,m,h,ip))
 
 def main():
 	global auth, maxerr, api, pos, dely
-        api = "kitkabackend.eastus.cloudapp.azure.com:5010"
-        auth = str(input("Auth Key: "))
+	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
+	auth = str(input("Auth Key : "))
 	pos = int(input("""
 0 = Round 1 (Eliminated)
 1 = Round 2 (Eliminated)
