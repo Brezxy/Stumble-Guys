@@ -43,7 +43,7 @@ banner= """
 \033[37m | [+]  Credits : Eskeyz		       |
 \033[37m | [+]  TEAM    : DARK CYBER HUNTER            |
 \033[37m | [+]  Chanel  : Brezxy		       |
-\033[35m[•]───────────────────────────────────────────[•]""""""
+\033[35m[•]───────────────────────────────────────────[•]"""
 os.system('clear')
 print(banner)
 print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,m,p,p,m,p,ip))
