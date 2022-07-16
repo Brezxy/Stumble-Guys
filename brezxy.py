@@ -79,7 +79,7 @@ def s():
                                 nama = response.text.split('"Username":')[1].split(',')[0]
                                 trophy = response.text.split('"SkillRating":')[1].split(',')[0]
                                 crown = response.text.split('"Crowns":')[1].split(',')[0]
-                                sys.stdout.write(f"\r[{dt.hour}:{dt.minute}:{dt.second}] {id} | {nama} | {negara} | {region} | {crown} | {trophy}")
+                                sys.stdout.write(f"\r[{dt.minute}:{dt.second}] {id} | {nama} | {negara} | {region} | {crown} | {trophy}")
                                 sys.stdout.flush()
                         elif response.status_code == 403 and response.text == "BANNED":
                                 print (f"\033[1;30m<════════════[\033[1;33;41m • \033[1;37m Account get Banned! \033[1;33m• \033[0m\033[1;30m]══════════════>")
