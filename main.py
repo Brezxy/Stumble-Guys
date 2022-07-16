@@ -3,7 +3,7 @@ import requests, threading, datetime, sys, os, time
 def main():
 	global auth, maxerr, api, pos, dely
 	os.system('cls' if os.name == 'nt' else 'clear')
-	print(f"Who's Eskey ?")
+	print(f"BREZXY")
 	print(f"Crown & Trophy Duplicator.")
 	print(f"")
 	print(f"Kalau ngestuck tunggu aja")
