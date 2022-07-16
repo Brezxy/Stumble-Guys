@@ -35,7 +35,7 @@ banner= """
 \033[35m ╚══════╝╚═╝╚═╝     ╚═╝╚═╝   ╚═╝                                      
 \033[35m[•]───────────────────────────────────────────[•]
 \033[37m | [+]  Author  : Brezxy 		       |
-\033[37m | [+]  Credits :\033[90m Eskeyz		       |
+\033[37m | [+]  Credits : Eskeyz		       |
 \033[37m | [+]  TEAM    : DARK CYBER HUNTER            |
 \033[37m | [+]  Chanel  : Brezxy		       |
 \033[35m[•]───────────────────────────────────────────[•]"""
@@ -45,16 +45,16 @@ print(banner)
 def main():
 	global auth, maxerr, api, pos, dely
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
-	auth = str(input("\033[35m Auth Key : "))
-	pos = int(input("""
-\033[35m 0 = Round 1 (Eliminated)
+	auth = str(input("\033[37m Auth Key : 
+"))
+	pos = int(input("""\033[37m 0 = Round 1 (Eliminated)
 \033[35m 1 = Round 2 (Eliminated)
 \033[35m 2 = Round 3 (Eliminated)
 \033[35m 3 = Round 3 (Winner)
 Input : """))
-	dely = float(input("\n\033[35mDelay ( Ex. 1.0 ): "))
-	thr = int(input("\n\033[35mThreads ( Default '1' ): "))
-	print("◆❯────────────────────────「  STARTING  」──────────────────────❮◆")
+	dely = float(input("\n\033[37mDelay ( Ex. 2.0 ): "))
+	thr = int(input("\n\033[37mThreads ( Default '1' ): "))
+	print (f"\033[1;30m<════════════[\033[1;33;41m • \033[1;37m STARTING \033[1;33m• \033[0m\033[1;30m]══════════════>")
 	for _ in range(thr):
 	        threading.Thread(target=s).start()
 
@@ -73,13 +73,11 @@ def s():
                         }
                         response = requests.get(f'http://{api}/round/finishv2/{pos}', headers=headers)
                         if response.status_code == 200:
-                                negara = response.text.split('"Country":')[1].split(',')[0]
-                                region = response.text.split('"Region":')[1].split(',')[0]
                                 id = response.text.split('"Id":')[1].split(',')[0]
                                 nama = response.text.split('"Username":')[1].split(',')[0]
                                 trophy = response.text.split('"SkillRating":')[1].split(',')[0]
                                 crown = response.text.split('"Crowns":')[1].split(',')[0]
-                                sys.stdout.write(f"\r[{dt.minute}:{dt.second}] {id} | {nama} | {negara} | {region} | {crown} | {trophy}")
+                                sys.stdout.write(f"\r[{dt.minute}:{dt.second}] {id} | {nama} | {crown} | {trophy}")
                                 sys.stdout.flush()
                         elif response.status_code == 403 and response.text == "BANNED":
                                 print (f"\033[1;30m<════════════[\033[1;33;41m • \033[1;37m Account get Banned! \033[1;33m• \033[0m\033[1;30m]══════════════>")
