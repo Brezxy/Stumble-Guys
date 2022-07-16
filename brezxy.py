@@ -24,13 +24,13 @@ def main():
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
 	auth = str(input("Auth Key : "))
 	pos = int(input("""
-1 = Round 1 (Eliminated)
-2 = Round 2 (Eliminated)
-3 = Round 3 (Winner)
+1 : Round 1 (Eliminated)
+2 : Round 2 (Eliminated)
+3 : Round 3 (Winner)
 Input: """))
 	dely = float(input("\nDelay ( Ex. 2.0 and etc ): "))
 	thr = int(input("\nThreads ( Default '1' ): "))
-	print("="*64)
+	print("◆❯────────────────────────「  STARTING  」──────────────────────❮◆")
 	for _ in range(thr):
 	        threading.Thread(target=s).start()
 
