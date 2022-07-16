@@ -1,4 +1,5 @@
 import requests, threading, datetime, sys, os, time
+from time import sleep
 
 a,m,h,k,b,u,c,p,bn,o = [
 '\033[90m',
@@ -44,15 +45,15 @@ print(banner)
 def main():
 	global auth, maxerr, api, pos, dely
 	api = "kitkabackend.eastus.cloudapp.azure.com:5010"
-	auth = str(input("Auth Key : "))
+	auth = str(input("\033[35m Auth Key : "))
 	pos = int(input("""
-0 = Round 1 (Eliminated)
-1 = Round 2 (Eliminated)
-2 = Round 3 (Eliminated)
-3 = Round 3 (Winner)
-Input: """))
-	dely = float(input("\nDelay ( Ex. 1.0 ): "))
-	thr = int(input("\nThreads ( Default '1' ): "))
+\033[35m 0 = Round 1 (Eliminated)
+\033[35m 1 = Round 2 (Eliminated)
+\033[35m 2 = Round 3 (Eliminated)
+\033[35m 3 = Round 3 (Winner)
+Input : """))
+	dely = float(input("\n\033[35mDelay ( Ex. 1.0 ): "))
+	thr = int(input("\n\033[35mThreads ( Default '1' ): "))
 	print("◆❯────────────────────────「  STARTING  」──────────────────────❮◆")
 	for _ in range(thr):
 	        threading.Thread(target=s).start()
