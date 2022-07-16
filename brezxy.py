@@ -46,9 +46,7 @@ banner= """
 \033[35m[•]───────────────────────────────────────────[•]"""
 os.system('clear')
 print(banner)
-print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,h,p,k,m,h,ip))
-
-print ('\033[31;1m[!] \033[32;1mContoh auth : \033[33;1m{"DeviceId":"5f3b5e8d7fcebaf3bae41cccacc934c8","GoogleId":"","FacebookId":"","Token":"A7IoWdk-6nYlcP1nYFu_M4IqrM9LM6y7","Timestamp":1657926040,"Hash":"87e8ff5342a5d261a53dfdb14391f6fb0a43f683"}')
+print ('%s[%s+%s] %sYour IP %s: %s%s' % (p,h,p,k,m,h,ip))
 
 def main():
 	global auth, maxerr, api, pos, dely
