@@ -1,5 +1,8 @@
-import requests, threading, datetime, sys, os, time
-from time import sleep
+try:    # Janggan di ubah
+        import import requests, threading, datetime, sys, os, time,random
+except ModuleNotFoundError:
+         print ('[!] Install Modul Requests')
+         os.system('pip install requests')
 
 try:    # Janggan di ubah
         ip = requests.get('https://api.ipify.org').text
