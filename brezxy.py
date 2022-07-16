@@ -1,5 +1,5 @@
 try:    # Janggan di ubah
-        import import requests, threading, datetime, sys, os, time,random
+        import requests, threading, datetime, sys, os, time,random
 except ModuleNotFoundError:
          print ('[!] Install Modul Requests')
          os.system('pip install requests')
