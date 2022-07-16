@@ -1,6 +1,11 @@
 import requests, threading, datetime, sys, os, time
 from time import sleep
 
+try:    # Janggan di ubah
+        ip = requests.get('https://api.ipify.org').text
+except requests.exceptions.ConnectionError:
+        exit(' [!] Koneksi Internet Error')
+
 a,m,h,k,b,u,c,p,bn,o = [
 '\033[90m',
 '\033[31m',
@@ -64,11 +69,6 @@ def s():
         global maxerr
         while True:
                 dt = datetime.datetime.now()
-                try:    # Janggan di ubah
-                        ip = requests.get('https://api.ipify.org').text
-                except requests.exceptions.ConnectionError:
-                        exit(' [!] Koneksi Internet Error')
-
                 try:
                         headers = {
                             'authorization': auth,
