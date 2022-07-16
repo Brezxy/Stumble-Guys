@@ -19,6 +19,18 @@ print ('\033[36;1mSubscribe yt ku ngab \033[37mBrezxy \033[36mok!')
 os.system('termux-open-url https://youtube.com/channel/UCQGgmljcA-bap-13YdL-sAQ')
 sleep(3)
 os.system('clear')
+# Ubah Terserah kalian
+banner= """
+\033[33;1m╔════════════════════════════════════════════════╗
+\033[33;1m║  \033[36;1m [•] Authour : Brezxy                      \033[33;1m ║
+\033[33;1m║  \033[36;1m [•] Credits : https://github.com/Eskeyz     \033[33;1m ║
+\033[33;1m║  \033[36;1m [•] Yotube  : Brezxy                      \033[33;1m ║
+\033[33;1m╚════════════════════════════════════════════════╝
+\033[36;1m╔═══════════════════════════╗
+\033[36;1m║\033[33;1m JANGAN TERLALU BRUTAL NGAB\033[36;1m ║
+\033[36;1m╚═══════════════════════════╝"""
+sleep(1)
+print(banner)
 
 def main():
 	global auth, maxerr, api, pos, dely
