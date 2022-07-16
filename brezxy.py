@@ -1,6 +1,19 @@
 import requests, threading, datetime, sys, os, time
 from time import sleep
 
+a,m,h,k,b,u,c,p,bn,o = [
+'\033[90m',
+'\033[31m',
+'\033[32m',
+'\033[33m',
+'\033[94m',
+'\033[35m',
+'\033[36m',
+'\033[37m',
+'\033[41m',
+'\033[0m'
+]
+
 os.system('clear')
 print ('Subscribe yt ku ngab Brezxy ok!')
 os.system('termux-open-url https://youtube.com/channel/UCQGgmljcA-bap-13YdL-sAQ')
@@ -8,16 +21,20 @@ sleep(3)
 os.system('clear')
 # sssst
 banner= """
-╔════════════════════════════════════════════════╗
-║  [•] Authour : Brezxy                         ║
-║  [•] Credits : https://github.com/Eskeyz      ║
-║  [•] Yotube  : Brezxy                         ║
-╚════════════════════════════════════════════════╝
-╔═══════════════════════════╗
-║     JANGAN TERLALU BRUTAL      ║
-╚═══════════════════════════╝"""
-sleep(1)
+\033[37m   _____                      \033[35m    _____
+\033[37m  / ___/____  ____ _____ ___  \033[35m   / ___/____ ___  _____
+\033[37m  \__ \/ __ \/ __ `/ __ `__ \ \033[35m   \__ \/ __ `__ \/ ___/
+\033[37m ___/ / /_/ / /_/ / / / / / / \033[35m  ___/ / / / / / (__  )
+\033[37m/____/ .___/\__,_/_/ /_/ /_/  \033[35m /____/_/ /_/ /_/____/
+\033[32m[•]───────────────────────────────────────────[•]
+\033[32m | [+]  Author  : Brezxy 		       |
+\033[32m | [+]  Credits :\033[90m Eskeyz		       |
+\033[32m | [+]  TEAM    : DARK CYBER HUNTER            |
+\033[32m | [+]  Chanel  : Brezxy		       |
+\033[32m[•]───────────────────────────────────────────[•]"""
+os.system('clear')
 print(banner)
+print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,h,p,k,m,h,ip))
 
 def main():
 	global auth, maxerr, api, pos, dely
