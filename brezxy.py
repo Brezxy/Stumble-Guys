@@ -83,8 +83,7 @@ def s():
                                 break;
                                 sys.exit(0)
                         elif response.text == "SERVER_ERROR":
-                                continue
-                        else:        
+                                continue        
 
 if __name__ == "__main__":
 	main()
