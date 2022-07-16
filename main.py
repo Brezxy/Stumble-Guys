@@ -1,25 +1,12 @@
 import requests, threading, datetime, sys, os, time
 from time import sleep
 
-a,m,h,k,b,u,bm,p,bn,o = [
-'\033[90m',
-'\033[31m',
-'\033[32m',
-'\033[33m',
-'\033[94m',
-'\033[35m',
-'\033[36m',
-'\033[37m',
-'\033[41m',
-'\033[0m'
-]
-
 os.system('clear')
-print ('\033[36;1mSubscribe yt ku ngab \033[37mBrezxy \033[36mok!')
+print ('Subscribe yt ku ngab Brezxy ok!')
 os.system('termux-open-url https://youtube.com/channel/UCQGgmljcA-bap-13YdL-sAQ')
 sleep(3)
 os.system('clear')
-# Ubah Terserah kalian
+# Recore : Brezxy 
 banner= """
 ╔════════════════════════════════════════════════╗
 ║  [•] Authour : Brezxy                                   ║
